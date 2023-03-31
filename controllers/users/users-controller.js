@@ -44,7 +44,7 @@ const updateUser = (req, res) => {
     const userId = req.params['uid']
     const updates = req.body;
 
-    users.map((usr) => 
+    users = users.map((usr) => 
     usr._id === userId ? 
         {... usr, ...updates} : 
         usr
